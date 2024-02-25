@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jadiaz-b <jadiaz-b@student.42madrid>       +#+  +:+       +#+        */
+/*   By: jadiaz-b <jadiaz-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/12 16:32:08 by jadiaz-b          #+#    #+#             */
-/*   Updated: 2024/01/20 22:15:52 by jadiaz-b         ###   ########.fr       */
+/*   Updated: 2024/02/25 18:30:26 by jadiaz-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,11 @@ void	*ft_memset(void *b, int c, size_t len)
 	return ((void *)b);
 }
 
-/* he utlizado el mismo codigo 
- * que bzero pero igualo a relleno 
- * a int c lo que permite que 
- * envez de un cero se pueda 
- * poenr cualquier elemento en menset
+/* used same code as bzero 
+ * but we equal relleno to 0 
+ * to int c insted a 0
+ * you can use any  
+ * other element in menset
 #include <stddef.h>
 #inlcude <stdio.h>
 #include <string.h>

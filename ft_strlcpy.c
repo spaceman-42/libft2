@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jadiaz-b <jadiaz-b@student.42madrid>       +#+  +:+       +#+        */
+/*   By: jadiaz-b <jadiaz-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 12:24:16 by jadiaz-b          #+#    #+#             */
-/*   Updated: 2024/02/03 16:30:20 by jadiaz-b         ###   ########.fr       */
+/*   Updated: 2024/02/25 18:36:00 by jadiaz-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,11 +33,12 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 }
 /*
 #include <stdio.h>
+
 int main()
 {
 	char d[] = "illoooooooo";
-	char mispelota[] = "pedrooo";
-	printf("%zu", ft_strlcpy(d, mispelota, 100));
+	char madrid42[] = "Jacobo";
+	printf("%zu", ft_strlcpy(d, madrid42, 100));
 	return (0);
 }
 */

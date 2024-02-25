@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jadiaz-b <jadiaz-b@student.42madrid>       +#+  +:+       +#+        */
+/*   By: jadiaz-b <jadiaz-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 20:57:02 by jadiaz-b          #+#    #+#             */
-/*   Updated: 2024/01/20 20:51:40 by jadiaz-b         ###   ########.fr       */
+/*   Updated: 2024/02/25 18:09:06 by jadiaz-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,27 +28,27 @@ void	ft_bzero(void *s, size_t n)
 #include <strings.h>
 int main ()
 {
-	char arr[10] = "Vamos";
+	char arr[10] = "Vamos Jacobo!";
 	size_t n;
 
 	n = 3;
-  // Printf el  array antes de ejcutr bzeroo
+  // Print the array before excuting bzero
   printf("Pre  bzero: %s\n", arr + 2);
-  // Se usa  bzero  para limpiar el  array
+  // bzero is used to clean the array
   ft_bzero(arr + 2, n);
-  // Printf una vez que se ha usado el  bzero
-  printf("Post  bzero: %s\n", arr);
-  // Return 0 para indicar que se ha ejecutado bien n
-  return 0;
+  // Printf once bzero has been used 
+    printf("Post  bzero: %s\n", arr);
+  // Return 0 to show a well done execution
+  return (0);
 }
 */
-/* Como alternativa puedo usar */
+/* As a good alternative */
 /* #include "libft.h" */
 /*
 void	ft_bzero(void *s, size_t n) 
 {
 	ft_memset(s, 0, n); */
-/* borra los datos en los n bytes de la memoria */
-/*  comenzando en la ubicación señalada por s,*/
-/*  escribiendo ceros (0) en esa área */
-/* } es una solución ás limpia pero menos instructiva*/
+/* it deletes the data inside the n bytes of the memory */
+/*  it starts by the laocation pointed by s,*/
+/*  writes as many (0) in that area */
+/* } */

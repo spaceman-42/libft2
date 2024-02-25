@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jadiaz-b <jadiaz-b@student.42madrid>       +#+  +:+       +#+        */
+/*   By: jadiaz-b <jadiaz-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/09 13:51:05 by jadiaz-b          #+#    #+#             */
-/*   Updated: 2024/02/10 21:59:18 by jadiaz-b         ###   ########.fr       */
+/*   Updated: 2024/02/25 19:32:19 by jadiaz-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
@@ -36,6 +35,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 }
 /*
 #include <stdlib.h> 
+#include <stdio.h>
+
 int main()
 {
     char const *s1 = ". ,1Hola, Mundo1! .,,";

@@ -6,13 +6,11 @@
 /*   By: jadiaz-b <jadiaz-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/22 22:38:35 by jadiaz-b          #+#    #+#             */
-/*   Updated: 2024/02/24 19:26:41 by jadiaz-b         ###   ########.fr       */
+/*   Updated: 2024/02/25 18:30:17 by jadiaz-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
-#include <string.h>
 
 static size_t	count_substrings(const char *s, char c)
 {
@@ -98,6 +96,8 @@ char	**ft_split(const char *s, char c)
 }
 
 /*
+#include <stdlib.h>
+#include <string.h>
 char	**ft_split(const char *s, char c)
 {
 	size_t	substr_count;

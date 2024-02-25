@@ -3,17 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jadiaz-b <jadiaz-b@student.42madrid>       +#+  +:+       +#+        */
+/*   By: jadiaz-b <jadiaz-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 15:55:58 by jadiaz-b          #+#    #+#             */
-/*   Updated: 2024/02/21 23:12:18 by jadiaz-b         ###   ########.fr       */
+/*   Updated: 2024/02/25 19:38:50 by jadiaz-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-#include "libft.h"
-#include <stdlib.h>
 
 t_list	*ft_lstnew(void *content)
 {
@@ -26,8 +23,10 @@ t_list	*ft_lstnew(void *content)
 	node->next = NULL;
 	return (node);
 }
+/*
+#include <stdio.h>
+#include <stdlib.h>
 
-/*#include <stdio.h>
 int main(void)
 {
     int content = 1;

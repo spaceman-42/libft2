@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jadiaz-b <jadiaz-b@student.42madrid>       +#+  +:+       +#+        */
+/*   By: jadiaz-b <jadiaz-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 21:52:08 by jadiaz-b          #+#    #+#             */
-/*   Updated: 2024/02/09 13:58:34 by jadiaz-b         ###   ########.fr       */
+/*   Updated: 2024/02/25 19:10:37 by jadiaz-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
@@ -42,12 +40,16 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	}
 	return (NULL);
 }
-/*
-	if (!s1 || !s2)
-	return (NULL)
+/* 
+#include <stdio.h>
+#include <stdlib.h>
+	
 int main()
 {
 	printf("%s", ft_strjoin(4, tab, "Test"));
 	return (0);
 }
+******
+if (!s1 || !s2)
+	return (NULL)
 */

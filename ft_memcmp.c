@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jadiaz-b <jadiaz-b@student.42madrid>       +#+  +:+       +#+        */
+/*   By: jadiaz-b <jadiaz-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/29 17:42:49 by jadiaz-b          #+#    #+#             */
-/*   Updated: 2024/02/03 16:14:52 by jadiaz-b         ###   ########.fr       */
+/*   Updated: 2024/02/25 18:25:58 by jadiaz-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
@@ -31,7 +30,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 }
 
 // comparado con el ft_strncmp
-/*
+/* #include <stdio.h>
 int main()
 {
 

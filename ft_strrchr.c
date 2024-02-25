@@ -3,14 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jadiaz-b <jadiaz-b@student.42madrid>       +#+  +:+       +#+        */
+/*   By: jadiaz-b <jadiaz-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/14 19:14:51 by jadiaz-b          #+#    #+#             */
-/*   Updated: 2024/02/03 16:44:53 by jadiaz-b         ###   ########.fr       */
+/*   Updated: 2024/02/25 18:36:33 by jadiaz-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
@@ -27,6 +26,8 @@ char	*ft_strrchr(const char *s, int c)
 	return (0);
 }
 /*
+#include <stdio.h>
+
 char	*ft_strrchr(const char *s, int c)
 {
 	while (*s)

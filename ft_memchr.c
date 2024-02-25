@@ -3,14 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jadiaz-b <jadiaz-b@student.42madrid>       +#+  +:+       +#+        */
+/*   By: jadiaz-b <jadiaz-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/28 16:23:39 by jadiaz-b          #+#    #+#             */
-/*   Updated: 2024/02/03 16:10:56 by jadiaz-b         ###   ########.fr       */
+/*   Updated: 2024/02/25 18:26:02 by jadiaz-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
@@ -29,7 +28,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-/*
+/*#include <stdio.h>
+******************
 void *ft_memchr(const void *s, int c, size_t n)
 {
 	char   *s1;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jadiaz-b <jadiaz-b@student.42madrid>       +#+  +:+       +#+        */
+/*   By: jadiaz-b <jadiaz-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 19:54:08 by jadiaz-b          #+#    #+#             */
-/*   Updated: 2024/01/22 18:39:45 by jadiaz-b         ###   ########.fr       */
+/*   Updated: 2024/02/25 18:26:17 by jadiaz-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
-
 /*#include <stdio.h>
 int main ()
 {

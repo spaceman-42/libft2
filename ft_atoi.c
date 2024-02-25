@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jadiaz-b <jadiaz-b@student.42madrid>       +#+  +:+       +#+        */
+/*   By: jadiaz-b <jadiaz-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/03 16:52:33 by jadiaz-b          #+#    #+#             */
-/*   Updated: 2024/02/04 03:03:25 by jadiaz-b         ###   ########.fr       */
+/*   Updated: 2024/02/25 18:12:27 by jadiaz-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int	ft_atoi(const char *str)
 {
@@ -35,10 +34,9 @@ int	ft_atoi(const char *str)
 	}
 	return (num * sign);
 }
-
 /* Last while could be (ft_isdigit(str[i))]
 #include <stdlib.h>
-
+#include <stdio.h>
 int	main()
 {
 	char *str1 = "100000pepa";

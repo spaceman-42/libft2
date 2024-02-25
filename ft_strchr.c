@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jadiaz-b <jadiaz-b@student.42madrid>       +#+  +:+       +#+        */
+/*   By: jadiaz-b <jadiaz-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/14 18:14:01 by jadiaz-b          #+#    #+#             */
-/*   Updated: 2024/01/21 14:24:51 by jadiaz-b         ###   ########.fr       */
+/*   Updated: 2024/02/25 19:11:39 by jadiaz-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,16 @@ char	*ft_strchr(const char *s, int c)
 }
 /*
 #include <stdio.h>
+
+int	main()
+{
+const char s[] = "Hello, world!";
+const char c = 'l'; 
+char *p;
+  p = ft_strchr(s, c);
+ printf("Result: %s\n", p);
+}
+***************
 {
 	int i;
 
@@ -36,15 +46,5 @@ char	*ft_strchr(const char *s, int c)
 	if (s[i] == (char) c)
 		return ((char *)&s[i];
 	return (NULL);
-}
-*/
-/*
-int	main()
-{
-const char s[] = "Hello, world!";
-const char c = 'l'; 
-char *p;
-  p = ft_strchr(s, c);
- printf("Result: %s\n", p);
 }
 */

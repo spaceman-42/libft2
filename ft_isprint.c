@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jadiaz-b <jadiaz-b@student.42madrid>       +#+  +:+       +#+        */
+/*   By: jadiaz-b <jadiaz-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 21:18:09 by jadiaz-b          #+#    #+#             */
-/*   Updated: 2024/01/20 22:06:27 by jadiaz-b         ###   ########.fr       */
+/*   Updated: 2024/02/25 18:26:12 by jadiaz-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ int	ft_isprint(int c)
 	}
 	return (0);
 }
-
 /*
 #include <stdio.h>
 int main()

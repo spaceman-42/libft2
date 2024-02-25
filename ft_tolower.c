@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jadiaz-b <jadiaz-b@student.42madrid>       +#+  +:+       +#+        */
+/*   By: jadiaz-b <jadiaz-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 20:47:50 by jadiaz-b          #+#    #+#             */
-/*   Updated: 2024/01/20 21:26:41 by jadiaz-b         ###   ########.fr       */
+/*   Updated: 2024/02/25 19:08:51 by jadiaz-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <ctype.h>
+#include "libft.h"
 
 int	ft_tolower(int c)
 {
@@ -21,6 +20,9 @@ int	ft_tolower(int c)
 		return (c);
 }
 /*
+#include <stdio.h>
+#include <ctype.h>
+
 int main()
 {
 printf("%c\n", ft_tolower('A'));

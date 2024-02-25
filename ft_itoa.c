@@ -6,12 +6,11 @@
 /*   By: jadiaz-b <jadiaz-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/23 20:43:53 by jadiaz-b          #+#    #+#             */
-/*   Updated: 2024/02/24 13:19:53 by jadiaz-b         ###   ########.fr       */
+/*   Updated: 2024/02/25 18:26:10 by jadiaz-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 static size_t	count_n(int n)
 {
@@ -20,7 +19,7 @@ static size_t	count_n(int n)
 	count = 0;
 	if (n < 0)
 	{
-		n = -n; // Make n positive for counting digits
+		n = -n;
 	}
 	while (n != 0)
 	{
@@ -49,7 +48,6 @@ static void	fill_str(char *str, long num, size_t len, int is_negative)
 	while (i > 0)
 	{
 		str[--i] = (num % 10) + '0';
-			// Use post-decrement to correctly place digits
 		num /= 10;
 	}
 	if (is_negative)
@@ -67,13 +65,16 @@ char	*ft_itoa(int n)
 
 	is_negative = 0;
 	num = n;
+	if (num == 0)
+		return (ft_strdup("0"));
 	if (n < 0)
 	{
 		is_negative = 1;
-		num = -num; // Make n positive for counting digits
+		num = -num;
 	}
 	len = count_n((int)num);
-	len = is_negative ? len + 1 : len; // Add  1 if negative
+	if (is_negative)
+		len++;
 	str = allocate_memory(len);
 	if (!str)
 		return (NULL);
@@ -81,6 +82,55 @@ char	*ft_itoa(int n)
 	return (str);
 }
 /*
+#include <stdlib.h>
+********** bAd 0 management ************
+char	*ft_itoa(int n)
+{
+	int		is_negative;
+	long	num;
+	size_t	len;
+	char	*str;
+
+	is_negative = 0;
+	num = n;
+	if (n < 0)
+	{
+		is_negative = 1;
+		num = -num;
+	}
+	len = count_n((int)num);
+	if (is_negative)
+		len++;
+	str = allocate_memory(len);
+	if (!str)
+		return (NULL);
+	fill_str(str, num, len, is_negative);
+	return (str);
+}
+***********************
+char	*ft_itoa(int n)
+{
+	int		is_negative;
+	long	num;
+	size_t	len;
+	char	*str;
+
+	is_negative = 0;
+	num = n;
+	if (n < 0)
+	{
+		is_negative = 1;
+		num = -num;
+	}
+	len = count_n((int)num);
+	len = is_negative ? len + 1 : len;
+	str = allocate_memory(len);
+	if (!str)
+		return (NULL);
+	fill_str(str, num, len, is_negative);
+	return (str);
+}
+
 ***********************************
 #include "libft.h"
 #include <stdlib.h>

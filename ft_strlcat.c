@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jadiaz-b <jadiaz-b@student.42madrid>       +#+  +:+       +#+        */
+/*   By: jadiaz-b <jadiaz-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/26 13:18:35 by jadiaz-b          #+#    #+#             */
-/*   Updated: 2024/02/03 16:26:50 by jadiaz-b         ###   ########.fr       */
+/*   Updated: 2024/02/25 19:09:58 by jadiaz-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
@@ -32,8 +31,10 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	}
 	return (dstsize + ft_strlen(src));
 }
+/*
+#include <stdio.h>
 
-/*int main()
+int main()
 {
     char dst[100] = "Hello";
     const char* src = ", World!";

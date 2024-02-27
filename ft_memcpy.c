@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jadiaz-b <jadiaz-b@student.42madrid>       +#+  +:+       +#+        */
+/*   By: jadiaz-b <jadiaz-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 12:33:08 by jadiaz-b          #+#    #+#             */
-/*   Updated: 2024/01/21 21:09:42 by jadiaz-b         ###   ########.fr       */
+/*   Updated: 2024/02/25 21:19:51 by jadiaz-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 #include <string.h>
 #include <stdio.h>
 #include <stddef.h>
+
 int main ()
 {
     //char origen[] = "hola mundo";

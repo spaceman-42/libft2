@@ -6,7 +6,7 @@
 /*   By: jadiaz-b <jadiaz-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/26 13:18:35 by jadiaz-b          #+#    #+#             */
-/*   Updated: 2024/02/25 19:09:58 by jadiaz-b         ###   ########.fr       */
+/*   Updated: 2024/02/28 16:23:00 by jadiaz-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,14 +36,19 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 
 int main()
 {
-    char dst[100] = "Hello";
+    char *dst = NULL;
     const char* src = ", World!";
-    size_t dstsize = sizeof(dst);
+    size_t dstsize = 0;
 
     size_t result = ft_strlcat(dst, src, dstsize);
 
     printf("Result: %s\n", dst);
     printf("Return value: %zu\n", result);
 
+	size_t result = strlcat(dst, src, dstsize);
+	printf("Result: %s\n", dst);
+    printf("Return value: %zu\n", result);
+
     return 0;
-}*/
+}
+*/
